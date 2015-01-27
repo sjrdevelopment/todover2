@@ -9,10 +9,26 @@
 import UIKit
 
 class ListItemsTableViewController: UITableViewController, UITableViewDelegate {
-
+    
+    var listItems = [ListItem]()
+    
+    var currentList : String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        var myNewList = currentList!
+        
+        //viewController.title = "some title"(myNewList)
+        self.title = myNewList
+        
+        var newListItem1 = ListItem(title: "My first list item", timestamp: NSDate(), listID: "tempIDList1")
+        listItems.append(newListItem1)
+        
+        var newListItem2 = ListItem(title: "My second list item", timestamp: NSDate(), listID: "tempIDList1")
+        listItems.append(newListItem2)
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -36,7 +52,7 @@ class ListItemsTableViewController: UITableViewController, UITableViewDelegate {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 5
+        return listItems.count
     }
 
     
@@ -44,7 +60,7 @@ class ListItemsTableViewController: UITableViewController, UITableViewDelegate {
         let cell = tableView.dequeueReusableCellWithIdentifier("listItemCell", forIndexPath: indexPath) as UITableViewCell
 
         // Configure the cell...
-        cell.textLabel?.text = "hello \(indexPath.row)"
+        cell.textLabel?.text = listItems[indexPath.row].title
         return cell
     }
     

@@ -6,31 +6,35 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>8383DE17-5D74-463C-A418-AB177CD7D955</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ToDoVer2</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>DA3D3CF1AEB88E9C4A8B95F1FCE57A68B30CA988</key>
-		<string>https://github.com/sjrdevelopment/todoappv2.git</string>
+		<key>10FD47B92073FCBA9CAB3C7D79AFBAEFFFDFD4CE</key>
+		<string>https://github.com/sjrdevelopment/todover2.git</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ToDoVer2.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>DA3D3CF1AEB88E9C4A8B95F1FCE57A68B30CA988</key>
-		<string>ToDoTherev2/</string>
+		<key>10FD47B92073FCBA9CAB3C7D79AFBAEFFFDFD4CE</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/sjrdevelopment/todoappv2.git</string>
+	<string>https://github.com/sjrdevelopment/todover2.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>DA3D3CF1AEB88E9C4A8B95F1FCE57A68B30CA988</string>
+	<string>10FD47B92073FCBA9CAB3C7D79AFBAEFFFDFD4CE</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>DA3D3CF1AEB88E9C4A8B95F1FCE57A68B30CA988</string>
+			<string>10FD47B92073FCBA9CAB3C7D79AFBAEFFFDFD4CE</string>
 			<key>IDESourceControlWCCName</key>
-			<string>ToDoTherev2</string>
+			<string>ToDoVer2</string>
 		</dict>
 	</array>
 </dict>

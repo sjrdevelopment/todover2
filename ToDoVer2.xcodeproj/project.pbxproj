@@ -13,10 +13,10 @@
 		37668D6F1A76AECA009324AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37668D6E1A76AECA009324AA /* Images.xcassets */; };
 		37668D721A76AECA009324AA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37668D701A76AECA009324AA /* LaunchScreen.xib */; };
 		37668D7E1A76AECA009324AA /* ToDoVer2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37668D7D1A76AECA009324AA /* ToDoVer2Tests.swift */; };
-		37668D891A76AEF5009324AA /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37668D871A76AEF5009324AA /* ListItem.swift */; };
-		37668D8A1A76AEF5009324AA /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37668D881A76AEF5009324AA /* List.swift */; };
 		37668D8C1A76B0A9009324AA /* ListsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37668D8B1A76B0A9009324AA /* ListsTableViewController.swift */; };
 		37668D8E1A76B0E4009324AA /* ListItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37668D8D1A76B0E4009324AA /* ListItemsTableViewController.swift */; };
+		37668D951A77A9A5009324AA /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37668D931A77A9A5009324AA /* List.swift */; };
+		37668D961A77A9A5009324AA /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37668D941A77A9A5009324AA /* ListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +40,10 @@
 		37668D771A76AECA009324AA /* ToDoVer2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoVer2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37668D7C1A76AECA009324AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37668D7D1A76AECA009324AA /* ToDoVer2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoVer2Tests.swift; sourceTree = "<group>"; };
-		37668D871A76AEF5009324AA /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListItem.swift; path = ../../ToDoTherev2/ToDoTherev2/ListItem.swift; sourceTree = "<group>"; };
-		37668D881A76AEF5009324AA /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = List.swift; path = ../../ToDoTherev2/ToDoTherev2/List.swift; sourceTree = "<group>"; };
 		37668D8B1A76B0A9009324AA /* ListsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsTableViewController.swift; sourceTree = "<group>"; };
 		37668D8D1A76B0E4009324AA /* ListItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemsTableViewController.swift; sourceTree = "<group>"; };
+		37668D931A77A9A5009324AA /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		37668D941A77A9A5009324AA /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +85,8 @@
 		37668D611A76AECA009324AA /* ToDoVer2 */ = {
 			isa = PBXGroup;
 			children = (
-				37668D881A76AEF5009324AA /* List.swift */,
-				37668D871A76AEF5009324AA /* ListItem.swift */,
+				37668D931A77A9A5009324AA /* List.swift */,
+				37668D941A77A9A5009324AA /* ListItem.swift */,
 				37668D641A76AECA009324AA /* AppDelegate.swift */,
 				37668D8B1A76B0A9009324AA /* ListsTableViewController.swift */,
 				37668D8D1A76B0E4009324AA /* ListItemsTableViewController.swift */,
@@ -225,9 +225,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				37668D8E1A76B0E4009324AA /* ListItemsTableViewController.swift in Sources */,
-				37668D891A76AEF5009324AA /* ListItem.swift in Sources */,
+				37668D951A77A9A5009324AA /* List.swift in Sources */,
 				37668D8C1A76B0A9009324AA /* ListsTableViewController.swift in Sources */,
-				37668D8A1A76AEF5009324AA /* List.swift in Sources */,
+				37668D961A77A9A5009324AA /* ListItem.swift in Sources */,
 				37668D681A76AECA009324AA /* ToDoVer2.xcdatamodeld in Sources */,
 				37668D651A76AECA009324AA /* AppDelegate.swift in Sources */,
 			);

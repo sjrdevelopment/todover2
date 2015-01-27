@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ListsTableViewController: UITableViewController {
     var lists = [List]()
@@ -18,11 +19,15 @@ class ListsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+       
+        
+        
         var newList1 = List(title: "my first list", timestamp: NSDate(), listID: "tempIDList1")
         lists.append(newList1)
         
         var newList2 = List(title: "my second list", timestamp: NSDate(), listID: "tempIDList2")
         lists.append(newList2)
+
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -111,6 +116,54 @@ class ListsTableViewController: UITableViewController {
         }
         
     }
+    
+    
+    @IBAction func showListCreator(sender: UIButton) {
+        
+        let addItemAlertViewTag = 0
+        let addItemTextAlertViewTag = 1
+        
+        var stringPlaceholder = "this is placeholder"
+        
+        var titlePrompt = UIAlertController(title: "Enter List Title",
+            message: nil,
+            preferredStyle: .Alert)
+        
+        var titleTextField: UITextField?
+        titlePrompt.addTextFieldWithConfigurationHandler {
+            (textField) -> Void in
+            titleTextField = textField
+            textField.placeholder = "Title"
+        }
+        
+        titlePrompt.addAction(UIAlertAction(title: "Ok",
+            style: .Default,
+            handler: { (action) -> Void in
+                if let textField = titleTextField {
+                    if(countElements(textField.text) > 0) {
+                        
+                        println(textField.text)
+                       
+                    } else {
+                        // cancel item
+                    }
+                    
+                }
+        }))
+        
+        titlePrompt.addAction(UIAlertAction(title: "Cancel",
+            style: .Cancel,
+            handler: { (action) -> Void in
+                // cancel item
+        }))
+        
+        
+        self.presentViewController(titlePrompt,
+            animated: true,
+            completion: nil)
+        
+    }
+
     
     
     
